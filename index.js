@@ -8,6 +8,7 @@ const app = express();
 const judge = require('./judge');
 app.use(bodyParser.json());
 
+
 app.use('/', judge);
 
 app.listen(PORT, () => {
